@@ -1,0 +1,118 @@
+/* General Styles for Reservations Section */
+.reservations {
+  min-height: calc(100vh - 6.25rem - 18rem);
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+}
+
+.reservations h2 {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  color: #495e57;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #d1d1d1;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the Form */
+.reservations form {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styles for Form Fields */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field label {
+  font-size: 1.125rem; 
+  color: #333; 
+}
+
+.form-field input,
+.form-field select {
+  padding: 0.75rem; 
+  border: 1px solid #ced4da; 
+  border-radius: 5px;
+  font-size: 1rem; 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #495e57; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  outline: none; 
+}
+
+/* Styles for Submit Button */
+.reservations button {
+  background-color: #495e57; 
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; 
+  justify-self: center; 
+}
+
+.reservations button:hover {
+  background-color: #4a6e62; 
+  transform: scale(1.02);
+}
+
+.reservations button:disabled,
+.reservations button[disabled] {
+  background-color: #edefee;
+  border-color: #edefee;
+  color: #adafae;
+  cursor: not-allowed;
+}
+
+@media (max-width: 491px) {
+  .reservations form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.confirmed-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 0;
+  min-height: calc(100vh - 6.25rem - 18rem);
+}
+
+.confirmed-reservation h2 {
+  padding-top: 1.5rem;
+}
+
+.confirmed-reservation p {
+  padding-top: 0.25rem;
+}
+
+@media (max-width: 491px) {
+  .reservations form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reservations form button {
+    grid-column: 1 / span 1;
+  }
+}

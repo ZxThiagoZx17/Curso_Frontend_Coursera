@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.food-card-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.food-section {
+  margin-bottom: 40px;
+}
+
+.food-section-header {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.5em;
+  border-radius: 8px;
+}
+
+.food-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  padding: 20px;
+}
+
+.food-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.food-card__title {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.food-card__description {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.food-card__price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.food-card__line {
+  margin: 10px 0;
+  border-top: 1px solid #dee2e6;
+}
